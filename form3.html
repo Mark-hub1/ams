@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="form3.css" />
+    <script src="form3.js"> </script>
+
+    
+    
+  </head>
+  <body>
+    <section class="container">
+      <header>Appointment Form</header>
+      <h6><i> "Kindly fill-up this form"</i></h6>
+      <form class="form" action="connect.php" method="post">
+
+        <div class="input-box">
+          <label>First Name</label>
+          <span class="required-field"></span>
+          <input type="text" id="fname" name="fname" placeholder="(e.g Juan)" required />
+        </div>
+
+        <div class="input-box">
+          <label>Last Name</label>
+          <span class="required-field"></span>
+          <input type="text" id="lname" name="lname" placeholder="(e.g Dela Cruz)" pattern="[A-Za-z&#8211]+"title="Please complete your name"required />
+        </div>
+
+        <div class="input-box">
+          <label>Gmail Address:</label>
+          <span class="required-field"></span>
+          <input type="text" name="Email" placeholder="(juan@gmail.com)" pattern=".+@gmail\.com" title="Please enter valid gmail address" required />
+        </div>
+          
+          <div class="input-box">
+            <label>Student ID Number:</label>
+            <span class="required-field"></span>
+            <input type="text/number" name="ID" maxlength="11" pattern="[0-9]+" placeholder="(e.g CA123456789)" title="First 2 letters and 9 digits in your ID" required/>
+          </div>
+          <div class="input-box">
+            <label>Prefer Appointment Schedule:<i>(Note: "No work at weekends")</i></label>
+            <span class="required-field"></span>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="select-box">
+            <select>
+  
+              <option hidden>Requirements*</option>
+              <option>Form 137</option>
+              <option>Good moral</option>
+              <option>Certificate of Enrollment</option>
+                <option>Summary of Grades</option>
+            </select>
+            </div>
+            <div class="column1">
+              <div class="select-box1">
+                <select>
+                  <option hidden>Year Level*</option>
+                  <option>Freshmen</option>
+                  <option>2nd year</option>
+                  <option>3rd year</option>
+                  <option>4th year</option>
+              </select>
+              </div>
+              <div class="column2">
+              <div class="select-box2 ">
+                <select>
+                  <option hidden>Course*</option>
+                  <option>BS IT</option>
+                  <option>BS CRIMINOLOGY</option>
+                  <option>BS HRM</option>
+                  <option>BSC</option>
+                  <option>ABcom</option>
+                  <option>ABeng</option>
+                  <option>BSM</option>
+                  <option>BSP</option>
+                  <option>ABA</option>
+                  <option>BSAIS</option>
+                  <option>BSA</option>
+                  <option>BSMA</option>
+                  <option>BSREM</option>
+                  <option>BSIA</option>
+                  <option>BSLM</option>
+                  <option>BSBA</option>
+                  <option>ACT</option>
+                  <option>BSCS </option>
+                  <option>BSIS </option>
+                  <option>BECEd </option>
+                  <option>BELEMEd </option>
+                  <option>BSEd </option>
+                  <option>BTVTEd </option>
+                  <option>BSHM </option>
+                  <option>BSTM </option>
+                  <option>BSC </option>
+                  <option>BSISM </option>
+                  <option>BSPA </option>
+                  <option>BSCE</option>
+                  <option> BSELLE </option>
+                  <option> BSMT </option>
+                  <option> BSAM </option>
+                  <option>BSMedTech </option>
+                  <option>DHRM1 </option>
+                  <option> DHRM2</option>
+                  <option>DTMA </option>
+                  <option>DSDA </option>
+                  <option>DCCS </option>
+                  <option>DHWA </option>
+                  <option>CCG </option>
+                  <option>DOSM </option>
+                  <option>DMFT </option>
+                </select>
+              </div>
+              </div>
+          </div>
+        </div>
+        <button type="submit"class="btn btn-primary">Submit</button>
+        <button class="reset" input type="reset">Reset</button>
+        <button class="exit" INPUT TYPE="button" value="bacck" onClick="history.back()">Exit</button>
+      </form>
+    </section>
+  </body>
+</html>
+
